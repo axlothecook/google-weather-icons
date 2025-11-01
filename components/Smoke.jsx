@@ -1,0 +1,28 @@
+import styles from '../Icons.module.css';
+
+const SmokeGoogleIcon = ({ isBig }) => {
+    return (
+        <svg 
+            className={isBig ? styles.icon_big : styles.icon_small}
+            xmlns="http://www.w3.org/2000/svg" 
+            xml:space="preserve" 
+            viewBox="0 0 32 32" 
+            id="smoke"
+        >
+            <linearGradient id="a" x1="3.312" x2="9.115" y1="11.434" y2="13.186" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#f1f3f4"></stop>
+                <stop offset="1%" stopColor="#dedfdf"></stop>
+            </linearGradient>
+            <circle cx="8.625" cy="13.038" r="7.004" fill="#e3e4e4" fillRule="evenodd" clipRule="evenodd"></circle>
+            <linearGradient id="b" x1="11.742" x2="19.702" y1="6.277" y2="15.921" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#f1f3f4" stopOpacity=".8"></stop>
+            <stop offset=".005%" stopColor="#f1f3f4" stopOpacity=".801"></stop>
+            <stop offset=".558%" stopColor="#e3e4e4" stopOpacity=".912"></stop>
+            <stop offset="1%" stopColor="#dedfdf"></stop>
+            </linearGradient>
+            <path fill="url(#b)" d="M30.379 11.151c0-5.817-4.715-10.532-10.532-10.532S9.315 5.334 9.315 11.151c0 2 .589 3.851 1.557 5.444-1.37 1.233-2.248 3.002-2.248 4.991 0 3.591 2.818 6.499 6.359 6.7 2.099.175 2.951 1.422 3.021 3.07.088.007.173.026.263.026a3.305 3.305 0 0 0 2.351-5.625c.914-1.15 1.484-2.587 1.484-4.17 0-.052-.014-.1-.016-.152 4.739-1.029 8.293-5.236 8.293-10.284z"></path>
+        </svg>
+    );
+};
+
+export default SmokeGoogleIcon;
